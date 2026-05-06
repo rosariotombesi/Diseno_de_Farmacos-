@@ -2,7 +2,9 @@
 ## **Ejercicio 1: Contrucción y Visualización de la Red PPI**
 ### a. Topología de la red y "degree"
 
-![Diagrama de red](./imagenes/red.png)
+<p align="center">
+  <img src="red.png" width="400">
+</p>
 
 La topología de la red es densa, ya que con 5 nodos presenta las 10 interacciones posibles, está completamente conectada. Cada proteína tiene degree 4, lo que indica que todos los nodos están conectados entre sí. 
 
@@ -15,10 +17,14 @@ Se identifican 5 proteínas hub, ya que todas presentan el degree máximo de la 
 Actualmente esta el filtro en medium confidence (0.4)
 
 Con highest confidence (0.9): 
-![Diagrama de red con highest confidence](./imagenes/redhighest.png)
+<p align="center">
+  <img src="redhighest.png" width="400">
+</p>
 
 Con low confidence (0.15):
-![Diagrama de red con low confidence](./imagenes/redlowest.png)
+<p align="center">
+  <img src="redlowest.png" width="400">
+</p>
 
 Vemos que con low confidence y medium confidence no cambió nada, lo cual tiene sentido ya que la red ya estaba completamente conectada con 0,4. Eso significa que para esos 5 genes todas las interacciones visibles ya superaron el umbral medio. Con mayor confianza (0.9) se pierden conexiones, no están todos los nodos conectados. Visualmente la red sigue siendo densa pero ya no es completa. Vemos que desaparece la conexión entre PTGS2 y NFKB1, lo que hace que estos bajen a degree 3. Esto indica que varias asociaciones entre las proteínas analizadas están fuertemente respaldadas (porque al aumentar el filtro de nivel de confianza siguen estando) pero no todas alcanzan el máximo nivel de confianza.  
 
@@ -27,13 +33,13 @@ Este filtro es importante porque permite controlar la rigurosidad de la red. Sir
 ## **Ejercicio 2: Análisis de Enriquecimiento Funcional**
 ### a. Las 3 vías KEGG más enriquecidas (nombre y valor FDR).
 
-![Lista KEEG pathways](./imagenes/VIASKEEG.png)
+![Lista KEEG pathways](VIASKEEG.png)
 
 ### b. ¿Qué procesos biológicos aparecen? ¿Coinciden con contexto de cáncer?
 
-![Lista KEEG pathways](./imagenes/procbiologicos1.png)
+![Lista KEEG pathways](procbiologicos1.png)
 
-![Procesos biológicos](./imagenes/procbiologicos2.png)
+![Procesos biológicos](procbiologicos2.png)
 
 El análisis de enriquecimiento funcional revela que las proteínas estudiadas participan principalmente en procesos biológicos vinculados a la respuesta inflamatoria y la regulación inmune. Entre los procesos más relevantes se destacan la regulación de la respuesta inflamatoria aguda, la respuesta neuroinflamatoria, la regulación de la actividad enzimática asociada a ciclooxigenasas (COX), la generación de fiebre y la producción de factores de crecimiento como VEGF, involucrados en la angiogénesis.
 
