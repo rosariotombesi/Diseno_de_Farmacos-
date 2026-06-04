@@ -21,3 +21,17 @@
 - 📄 [Respuestas TP 3](TP_3.md)
 
 </details>
+
+<details>
+  <summary>📁 TP 4</summary>
+
+- 📄 [Respuestas TP 4](TP_4.md)
+
+</details>
+
+<details>
+  <summary>📁 TP 5</summary>
+
+- 📄 [Respuestas TP 5](TP_5.md)
+
+</details>
